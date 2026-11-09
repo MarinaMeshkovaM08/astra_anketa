@@ -1,0 +1,792 @@
+	<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<title>Анкета Знакомство с Astra Linux</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+<header>
+    <img src="images/banner.png" alt="Astra Linux" class="survey-banner">
+    <h1>Первое знакомство с ОС Astra Linux</h1>
+    <p>Оцените ваше первое впечатление и выявите трудности.</p>
+</header>
+		
+	<form action="https://formsubmit.co/meshkova.marina.08@gmail.com" method="POST" id="forma">
+		<input type="hidden" name="_captcha" value="false">
+		<input type="hidden" name="_subject" value="Новое сообщение с сайта!">
+		<input type="hidden" name="_next" value="">
+		
+		<!-- Имя участника -->
+		<fieldset class="form-block">
+			<legend>Данные участника</legend>
+			<div class="question-group">
+				<label class="question-title" for="fio">Введите вашу фамилию, имя и класс:</label>
+				<input type="text" id="fio" name="fio" class="form-input" placeholder="Иванов Иван, 11А класс" required>
+			</div>
+		</fieldset>
+
+		<!-- БЛОК 1 -->
+		<fieldset class="form-block">
+			<legend>Блок 1. Общие вопросы и прошлый опыт</legend>
+				<div class="question-group">
+					<label class="question-title">1. Ваш основной опыт работы с операционными системами до сегодняшнего дня (можно выбрать несколько вариантов):</label>
+						<div class="options-list">
+							<label><input type="checkbox" name="q1" value="windows"> Windows (7, 10, 11)</label>
+							<label><input type="checkbox" name="q1" value="macos"> macOS</label>
+							<label><input type="checkbox" name="q1" value="linux"> Свободные ОС семейства Linux (Ubuntu, Mint и др.)</label>
+							<label><input type="checkbox" name="q1" value="мобильные"> Только мобильные ОС (Android, iOS)</label>
+							<label><input type="checkbox" name="q1" value="ничего"> Практически нет опыта работы за компьютером</label>
+						</div>
+				</div>
+
+				<div class="question-group">
+					<label class="question-title">2. Оцените ваш общий уровень владения ПК:</label>
+						<div class="options-list">
+							<label><input type="radio" name="q2" value="начально" required> Начальный (браузер, просмотр видео, соцсети)</label>
+							<label><input type="radio" name="q2" value="уверенно"> Уверенный пользователь (офисные программы, работа с файлами)</label>
+							<label><input type="radio" name="q2" value="продвинуто"> Продвинутый (настройка сетей, администрирование)</label>
+						</div>
+				</div>
+
+				<div class="question-group">
+					<label class="question-title">3. Был ли у вас опыт создания компьютерных презентаций ранее?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q3" value="регулярно" required> Да, создаю регулярно и на высоком уровне</label> 
+							<label><input type="radio" name="q3" value="несколько"> Да, делал(а) несколько раз для школы</label>
+							<label><input type="radio" name="q3" value="редко"> Очень редкий опыт</label>
+							<label><input type="radio" name="q3" value="никогда"> Никогда раньше не создавал(а) презентации</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 2 -->
+		<fieldset class="form-block">
+			<legend>Блок 2. Первое впечатление и графическая оболочка</legend>
+				<div class="question-group">
+					<label class="question-title">4. Каким было ваше первое визуальное впечатление от интерфейса Astra Linux?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q4" value="хорошо" required> Приятный, современный дизайн</label>
+							<label><input type="radio" name="q4" value="нормально"> Обычный, ничем существенно не отличается от Windows</label>
+							<label><input type="radio" name="q4" value="плохо"> Устаревший дизайн</label>
+							<label><input type="radio" name="q4" value="очень плохо"> Интерфейс вызвал неприязнь</label>
+						</div>
+				</div>
+
+				<div class="question-group">
+					<label class="question-title">5. Оцените по шкале от 1 до 5, насколько интерфейс Astra Linux визуально похож на привычную вам ОС (1 — вообще не похож, 5 — полная копия):</label>
+						<div class="scale-rating">
+							<label><input type="radio" name="q5" value="1" required> 1</label>
+							<label><input type="radio" name="q5" value="2"> 2</label>
+							<label><input type="radio" name="q5" value="3"> 3</label>
+							<label><input type="radio" name="q5" value="4"> 4</label>
+							<label><input type="radio" name="q5" value="5"> 5</label>
+						</div>
+				</div>
+
+				<div class="question-group">
+					<label class="question-title">6. Насколько быстро вы смогли найти кнопку «Пуск» (главное меню) и базовые настройки системы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q6" value="быстро" required> Нашел(ла) мгновенно, без подсказок</label>
+							<label><input type="radio" name="q6" value="средне"> Потребовалось немного времени, чтобы сориентироваться</label>
+							<label><input type="radio" name="q6" value="медденно"> Не смог(ла) найти самостоятельно</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">7. Понятна ли вам логика работы с панелью задач и областью уведомлений (часы, сеть)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q7" value="да" required> Да, всё устроено точно так же, как в привычных ОС</label>
+							<label><input type="radio" name="q7" value="не очень"> Есть небольшие отличия, которые путают</label>
+							<label><input type="radio" name="q7" value="нет"> Абсолютно непонятно, элементы ведут себя непредсказуемо</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 3 -->
+		<fieldset class="form-block">
+			<legend>Блок 3. Базовая навигация и работа с файлами</legend>
+				<div class="question-group">
+					<label class="question-title">8. С какими элементами интерфейса у вас возникли трудности в первые полчаса урока? (выберите все подходящие варианты):</label>
+						<div class="options-list">
+							<label><input type="checkbox" name="q8" value="файл"> Файловый менеджер (поиск папок, создание каталогов)</label>
+							<label><input type="checkbox" name="q8" value="раскладка"> Переключение языковой раскладки клавиатуры (ENG/RUS)</label>
+							<label><input type="checkbox" name="q8" value="панель и настройки"> Панель управления / Настройки экрана и мыши</label>
+							<label><input type="checkbox" name="q8" value="окна"> Работа с окнами (свернуть, развернуть, закрыть)</label>
+							<label><input type="checkbox" name="q8" value="поиск программ"> Поиск и запуск нужных программ в меню «Пуск»</label>
+							<label><input type="checkbox" name="q8" value="нет трудностей"> Никаких трудностей не возникло, всё было понятно</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q9">9. Если в предыдущем вопросе вы столкнулись со специфической проблемой, опишите её:</label>
+						<input type="text" id="q9" name="q9" class="form-input" placeholder="Введите ваш ответ...">
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">10. Оцените удобство работы со встроенным файловым менеджером при создании папок для урока:</label>
+						<div class="options-list">
+							<label><input type="radio" name="q10" value="удобно" required> Очень удобно, всё логично</label>
+							<label><input type="radio" name="q10" value="нормально"> Нормально, но нужно привыкать к названиям и структуре папок Linux</label>
+							<label><input type="radio" name="q10" value="неудобно"> Абсолютно неудобно (сложно искать файлы, непривычное дерево каталогов)</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">11. Насколько легко вам удалось переключить раскладку клавиатуры на русский/английский язык при первом наборе текста?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q11" value="сразу" required> Сразу нажал(а) привычную комбинацию клавиш, и она сработала</label>
+							<label><input type="radio" name="q11" value="через время"> Потребовалось время, чтобы понять, какая комбинация настроена</label>
+							<label><input type="radio" name="q11" value="не получилось"> Без помощи учителя/соседа сменить язык не получилось</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">12. Удобно ли вам контекстное меню, вызываемое правой кнопкой мыши?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q12" value="удобно" required> Да, все нужные функции (копировать, вставить, создать) на месте</label>
+							<label><input type="radio" name="q12" value="не очень"> Меню кажется перегруженным или названия пунктов непривычны</label>
+							<label><input type="radio" name="q12" value="неудобно"> Неудобно, долго искал(а) элементарные действия</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 4 -->
+		<fieldset class="form-block">
+			<legend>Блок 4. Выполнение задания (создание презентации)</legend>
+				<div class="question-group">
+					<label class="question-title">13. Каким способом вы нашли и запустили программу для создания презентаций?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q13" value="меню" required> Через главное меню («Пуск» -> «Офис»)</label>
+							<label><input type="radio" name="q13" value="поиск"> Через строку поиска в меню «Пуск»</label>
+							<label><input type="radio" name="q13" value="рабочий стол"> Кликнул(а) правой кнопкой мыши на рабочем столе -> «Создать презентацию»</label>
+							<label><input type="radio" name="q13" value="Подсказали"> Мне подсказали (учитель / сосед)</label>
+						</div>
+				</div>	
+				
+				<div class="question-group">
+					<label class="question-title">14. Оцените интерфейс программы для презентаций по сравнению с привычным Microsoft PowerPoint:</label>
+						<div class="options-list">
+							<label><input type="radio" name="q14" value="то же самое" required> Практически то же самое, все инструменты на тех же местах</label>
+							<label><input type="radio" name="q14" value="средне"> Логика похожа, но дизайн кнопок, иконок и панелей непривычен</label>
+							<label><input type="radio" name="q14" value="разный"> Всё совсем по-другому, пришлось долго искать базовые функции</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">15. С какими конкретно действиями при создании презентации у вас возникли сложности? (выберите все подходящие варианты):</label>
+						<div class="options-list">
+							<label><input type="checkbox" name="q15" value="шаблон и дизайн"> Выбор, применение или изменение шаблона/дизайна слайдов</label>
+							<label><input type="checkbox" name="q15" value="новый слайд или макет"> Создание нового слайда или изменение его макета</label>
+							<label><input type="checkbox" name="q15" value="картинки"> Вставка сторонних изображений (из интернета или папки)</label>
+							<label><input type="checkbox" name="q15" value="анимации"> Настройка переходов между слайдами или анимации элементов</label>
+							<label><input type="checkbox" name="q15" value="текст"> Форматирование текста (изменение шрифта, цвета, размера, списков)</label>
+							<label><input type="checkbox" name="q15" value="сохранение формата"> Сохранение файла в нужном формате (.odp или .pptx)</label>
+							<label><input type="checkbox" name="q15" value="демонстрация"> Запуск демонстрации презентации на полный экран (F5)</label>
+							<label><input type="checkbox" name="q15" value="нет проблем"> Проблем не возникло, сделал(а) всё легко</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">16. Оцените по шкале от 1 до 5, насколько плавно, быстро и стабильно работала программа для презентаций:</label>
+						<div class="scale-rating">
+							<label><input type="radio" name="q16" value="1" required> 1</label>
+							<label><input type="radio" name="q16" value="2"> 2</label>
+							<label><input type="radio" name="q16" value="3"> 3</label>
+							<label><input type="radio" name="q16" value="4"> 4</label>
+							<label><input type="radio" name="q16" value="5"> 5</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">17. Удалось ли вам успешно сохранить готовую презентацию в папку с первого раза?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q17" value="да" required> Да, без проблем</label>
+							<label><input type="radio" name="q17" value="не очень"> Запутался(лась) в окне сохранения (структура папок Linux показалась сложной)</label>
+							<label><input type="radio" name="q17" value="нет"> Нет, программа зависла при сохранении / файл потерялся</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">18. Если вам нужно было скачать картинки для презентации из интернета, насколько удобным был встроенный браузер?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q18" value="отлично" required> Всё отлично, скачал(а) и нашел(ла) файлы без труда</label>
+							<label><input type="radio" name="q18" value="проблемно"> Браузер работает хорошо, но возникли проблемы с поиском скачанных файлов в системе</label>
+							<label><input type="radio" name="q18" value="неудобно"> Браузер показался медленным / неудобным</label>
+							<label><input type="radio" name="q18" value="без картино"> Не использовали картинки в презентации</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">19. Насколько понятным для вас оказался процесс запуска презентации в полноэкранный режим для проверки работы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q19" value="понятно" required> Сразу нашел(ла) нужную кнопку или нажал(а) F5</label>
+							<label><input type="radio" name="q19" value="не очень"> Долго искал(а) вкладку «Демонстрация» / «Слайд-шоу»</label>
+							<label><input type="radio" name="q19" value="непонятно"> Не смог(ла) запустить без подсказки</label>
+						</div>
+				</div>
+		</fieldset>
+
+		<!-- БЛОК 5 -->
+		<fieldset class="form-block">
+			<legend>Блок 5. Техническое состояние и производительность ПК</legend>
+				<div class="question-group">
+					<label class="question-title">20. Как вы визуально оцениваете скорость работы компьютера под управлением Astra Linux на уроке?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q20" value="быстро" required> Система работает очень быстро, программы открываются мгновенно</label>
+							<label><input type="radio" name="q20" value="средне"> Скорость средняя, работать вполне комфортно</label>
+							<label><input type="radio" name="q20" value="медленно"> Система заметно подтормаживает при выполнении задач</label>
+							<label><input type="radio" name="q20" value="очень медленно"> Компьютер очень сильно лагал, работать было невыносимо</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">21. Произошел ли у вас за время урока хотя бы один критический сбой системы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q21" value="нет" required> Нет, всё работало идеально</label>
+							<label><input type="radio" name="q21" value="почти"> Да, один раз аварийно закрылась программа (офис или браузер)</label>
+							<label><input type="radio" name="q21" value="да"> Да, система зависла, пришлось перезагружать компьютер кнопкой</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 6 -->
+		<fieldset class="form-block">
+			<legend>Блок 6. Психологический аспект, барьеры и адаптация</legend>
+				<div class="question-group">
+					<label class="question-title">22. Какие эмоции вы испытывали во время выполнения практического задания?</label>
+						<div class="table">
+							<table class="matrix-table">
+								<thead>
+									<tr>
+										<th>Эмоция</th>
+										<th>Да</th>
+										<th>Скорее да</th>
+										<th>Скорее нет</th>
+										<th>Нет</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Интерес и азарт</td>
+										<td><input type="radio" name="q22_interest" value="Да" required></td>
+										<td><input type="radio" name="q22_interest" value="Скорее да"></td>
+										<td><input type="radio" name="q22_interest" value="Скорее нет"></td>
+										<td><input type="radio" name="q22_interest" value="Нет"></td>
+									</tr>
+									<tr>
+										<td>Раздражение и злость</td>
+										<td><input type="radio" name="q22_anger" value="Да" required></td>
+										<td><input type="radio" name="q22_anger" value="Скорее да"></td>
+										<td><input type="radio" name="q22_anger" value="Скорее нет"></td>
+										<td><input type="radio" name="q22_anger" value="Нет"></td>
+									</tr>
+									<tr>
+										<td>Страх «сломать» систему</td>
+										<td><input type="radio" name="q22_fear" value="Да" required></td>
+										<td><input type="radio" name="q22_fear" value="Скорее да"></td>
+										<td><input type="radio" name="q22_fear" value="Скорее нет"></td>
+										<td><input type="radio" name="q22_fear" value="Нет"></td>
+									</tr>
+									<tr>
+										<td>Полная уверенность в действиях</td>
+										<td><input type="radio" name="q22_calm" value="Да" required></td>
+										<td><input type="radio" name="q22_calm" value="Скорее да"></td>
+										<td><input type="radio" name="q22_calm" value="Скорее нет"></td>
+										<td><input type="radio" name="q22_calm" value="Нет"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">23. Оцените общий уровень сложности перехода на Astra Linux лично для вас по шкале от 1 до 5 (1 — очень легко, 5 — крайне тяжело):</label>
+						<div class="scale-rating">
+							<label><input type="radio" name="q23" value="1" required> 1</label>
+							<label><input type="radio" name="q23" value="2"> 2</label>
+							<label><input type="radio" name="q23" value="3"> 3</label>
+							<label><input type="radio" name="q23" value="4"> 4</label>
+							<label><input type="radio" name="q23" value="5"> 5</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">24. Как изменилось ваше отношение к отечественным операционным системам после урока?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q24" value="хорошо" required> Изменилось в лучшую сторону (оказалось, всё работает нормально)</label>
+							<label><input type="radio" name="q24" value="средне"> Не изменилось, осталось нейтральным/положительным</label>
+							<label><input type="radio" name="q24" value="плохо"> Не изменилось, осталось скептическим/негативным</label>
+							<label><input type="radio" name="q24" value="очень плохо"> Изменилось в худшую сторону</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">25. Готовы ли вы использовать Astra Linux на домашнем компьютере, если Windows станет полностью недоступна?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q25" value="да" required> Да, без проблем</label>
+							<label><input type="radio" name="q25" value="возможно"> Да, но только для простых задач (интернет, фильмы, тексты)</label>
+							<label><input type="radio" name="q25" value="нет"> Скорее нет, буду искать любые способы остаться на привычной ОС</label>
+							<label><input type="radio" name="q25" value="точно нет"> Категорически нет</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 7 -->
+		<fieldset class="form-block">
+			<legend>Блок 7. Перспективы обучения, мотивация и адаптация</legend>
+				<div class="question-group">
+					<label class="question-title">26. По вашему мнению, навыки работы в Astra Linux пригодятся вам в будущей профессиональной деятельности?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q26" value="важно" required> Крайне важны, сейчас это обязательное требование на рынке труда</label>
+							<label><input type="radio" name="q26" value="возможно"> Возможно пригодятся, если на будущем месте работы будет импортозамещение</label>
+							<label><input type="radio" name="q26" value="вряд ли"> Вряд ли, коммерческие компании всё равно используют зарубежные ОС</label>
+							<label><input type="radio" name="q26" value="неважно"> Абсолютно бесполезный навык лично для моей специальности</label>
+						</div>
+				</div>	
+				
+				<div class="question-group">
+					<label class="question-title">27. Порекомендовали бы вы своим друзьям или коллегам попробовать Astra Linux?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q27" value="да" required> Да, этим можно пользоваться регулярно</label>
+							<label><input type="radio" name="q27" value="возможно"> Можно поставить только ради любопытства, но не в качестве основной ОС</label>
+							<label><input type="radio" name="q28" value="нет"> Нет, не вижу смысла тратить время на переобучение</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">28. Считаете ли вы, что все учебные заведения в РФ должны полностью перейти на отечественные ОС?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q28" value="да" required> Да, это необходимый шаг</label>
+							<label><input type="radio" name="q28" value="возможно"> Только частично, базовые классы лучше оставить на Windows/macOS</label>
+							<label><input type="radio" name="q28" value="нет"> Нет, это только усложняет процесс обучения</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">29. Что мотивирует вас изучать Astra Linux на данный момент сильнее всего? (можно выбрать несколько вариантов):</label>
+						<div class="options-list">
+							<label><input type="checkbox" name="q29" value="учеба"> Требование школы и желание получить хорошую оценку</label>
+							<label><input type="checkbox" name="q29" value="работа"> Работодатели сейчас активно ищут специалистов со знанием Linux</label>
+							<label><input type="checkbox" name="q29" value="интерес"> Личный интерес к устройству новых операционных систем</label>
+							<label><input type="checkbox" name="q29" value="ничего"> Меня ничего не мотивирует, занимаюсь только потому, что заставили</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q30">30. Важный вопрос: напишите, какой темы или разбора базовых функций (например: как устанавливать программы, работать в excel или настраивать горячие клавиши) вы больше всего ждете на следующем занятии?</label>
+						<input type="text" id="q30" name="q30" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+		</fieldset>
+		
+		
+		<!-- БЛОК 8 -->
+		<fieldset class="form-block">
+			<legend>Блок 8. Работа со встроенным поиском и навигацией Fly</legend>
+				<div class="question-group">
+					<label class="question-title">31. Какой инструмент вы использовали для поиска конкретного файла на диске, если забыли, куда его сохранили?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q31" value="поиск" required> Встроенный поиск в главном меню «Пуск»</label>
+							<label><input type="radio" name="q31" value="утилита"> Специальную графическую утилиту «Поиск файлов» (fly-find)</label>
+							<label><input type="radio" name="q31" value="вручную"> Искал(а) вручную, перебирая все папки по очереди в файловом менеджере</label>
+							<label><input type="radio" name="q31" value="не терял"> Не терял(а) файлы на уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">32. Пробовали ли вы искать текстовую информацию внутри документов с помощью встроенных поисковых средств системы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q32" value="да" required> Да, использовал(а) функцию «Поиск содержимого» в файловом менеджере</label>
+							<label><input type="radio" name="q32" value="почти"> Использовал(а) поиск внутри конкретной программы (например, LibreOffice)</label>
+							<label><input type="radio" name="q32" value="нет"> Не было необходимости искать текст внутри файлов</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">33. Насколько быстро глобальный поиск Astra Linux выдает результаты при вводе названия программы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q33" value="быстро" required> Мгновенно, программа отображается сразу при вводе первых букв</label>
+							<label><input type="radio" name="q33" value="не очень"> С небольшой задержкой, системе требуется время</label>
+							<label><input type="radio" name="q33" value="медленно"> Поиск работает некорректно или ничего не находит</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">34. Заметили ли вы разницу в адресной строке файлового менеджера при переходе по папкам (отображение путей в виде кнопок-хлебных крошек или обычного текста)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q34" value="да" required> Да, переключался(лась) в текстовый режим ввода пути для копирования адреса папки</label>
+							<label><input type="radio" name="q34" value="не очень"> Пользовался(лась) только стандартными кнопками-навигаторами</label>
+							<label><input type="radio" name="q34" value="нет"> Не обратил(а) внимания на устройство адресной строки</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">35. Как именно вы вызывали строку глобального поиска Fly для быстрого поиска файлов или программ на уроке?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q35" value="клавиша Win" required> Просто нажимал(а) клавишу Win (Super) на клавиатуре и сразу начинал(а) вводить текст</label>
+							<label><input type="radio" name="q35" value="меню Пуск"> Открывал(а) меню «Пуск» мышкой и кликал(а) на поисковую строку в самом верху меню</label>
+							<label><input type="radio" name="q35" value="поисковый виджет"> Использовал(а) специальный поисковый виджет на панели задач</label>
+							<label><input type="radio" name="q35" value="не знал"> Не знал(а), что поиск можно активировать мгновенным вводом с клавиатуры при открытом меню</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 9 -->
+		<fieldset class="form-block">
+			<legend>Блок 9. Структура папок и навигация в системе</legend>
+				<div class="question-group">
+					<label class="question-title">36. Насколько понятной вам показалась корневая структура каталогов (корневая папка "/") по сравнению с дисками C: и D: в Windows?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q36" value="логично" required> Всё логично, древовидная структура без деления на диски удобна</label>
+							<label><input type="radio" name="q36" value="возможно"> Непривычно и запутанно, сложно понять, где физически лежат файлы</label>
+							<label><input type="radio" name="q36" value="нелогично"> Не заходил(а) в корневые папки</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">37. Понимаете ли вы назначение системных папок, которые увидели в корневой директории? (Можно выбрать несколько вариантов)</label>
+						<div class="options-list">
+							<label><input type="checkbox" name="q37" value="/bin или /sbin"> /bin или /sbin (основные исполняемые программы и утилиты системы)</label>
+							<label><input type="checkbox" name="q37" value="/etc"> /etc (конфигурационные файлы системы и установленных программ)</label>
+							<label><input type="checkbox" name="q37" value="/media или /mnt">/media или /mnt (точки монтирования флешек, дисков и внешних устройств)</label>
+							<label><input type="checkbox" name="q37" value="/var"> /var (изменяемые файлы: логи системы, базы данных, кэш)</label>
+							<label><input type="checkbox" name="q37" value="ничего"> Ни одно из назначений системных папок мне пока не понятно</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">38. Вызвал ли у вас затруднения просмотр скрытых файлов и папок (начинающихся с точки, например, .config) в файловом менеджере?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q38" value="нет" required>Нет, легко включил(а) их отображение через настройки или горячие клавиши</label>
+							<label><input type="radio" name="q38" value="возможно"> Знал(а), что они есть, но не разобрался(лась), как их отобразить на экране</label>
+							<label><input type="radio" name="q38" value="да"> Вообще не знал(а), что в Linux существуют скрытые файлы на уровне точек</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">39. Насколько удобным вам показалось перемещение по путям в формате Linux (использование прямого слэша "/" вместо обратного "")?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q39" value="удобно" required>Абсолютно удобно, разница для меня не принципиальна</label>
+							<label><input type="radio" name="q39" value="неудобно"> Постоянно путаюсь и машинально ввожу обратный слэш из Windows</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 10 -->
+		<fieldset class="form-block">
+			<legend>Блок 10. Продвинутая работа с файлами и правами доступа</legend>
+				<div class="question-group">
+					<label class="question-title">40. Столкнулись ли вы с ситуацией, когда система отказала в сохранении или изменении файла из-за отсутствия прав доступа?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q40" value="да" required> Да, такое было</label>
+							<label><input type="radio" name="q40" value="нет"> Нет, все файлы создавались и редактировались без каких-либо ошибок</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">41. Пробовали ли вы открывать свойства файла, чтобы посмотреть текущие права доступа (Чтение, Запись, Выполнение для владельца/группы)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q41" value="да" required> Да, открывал(а) свойства, вкладка с правами интуитивно понятна</label>
+							<label><input type="radio" name="q41" value="почти"> Открывал(а), но буквенные или графические обозначения прав показались сложными</label>
+							<label><input type="radio" name="q41" value="нет"> Не заходил(а) в свойства файлов на уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">42. Понятна ли вам разница между обычным файлом данных и исполняемым файлом (скриптом или .bin) в Astra Linux?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q42" value="да" required> Да, понимаю, что в Linux файлу нужно явно задать права на выполнение</label>
+							<label><input type="radio" name="q42" value="не очень"> Не совсем понимаю, ожидал(а) автоматического запуска как у .exe файлов в Windows</label>
+							<label><input type="radio" name="q42" value="нет"> Не затрагивал(а) тему исполняемых файлов на уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">43. Пробовали ли вы создавать символические или жесткие ссылки (аналоги ярлыков Windows) для папок и файлов?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q43" value="да" required> Да, создал(а) ссылку через контекстное меню или терминал, всё работает</label>
+							<label><input type="radio" name="q43" value="пытался"> Пытался(лась), но ссылка не заработала или создалась некорректно</label>
+							<label><input type="radio" name="q43" value="нет"> Не было такой задачи на практическом занятии</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">44. Насколько корректно в файловом менеджере отображались текстовые файлы, перенесенные с Windows?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q44" value="корректно" required>Текст открылся идеально, все русские буквы читаются без проблем</label>
+							<label><input type="radio" name="q44" value="некорректно"> Вместо текста открылись нечитаемые символы</label>
+							<label><input type="radio" name="q44" value="не пробовал"> Не работал(а) с файлами из Windows на уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">45. Насколько понятной вам показалась концепция «Репозиториев» (централизованных сетевых хранилищ программ) после работы в Windows?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q45" value="понятно" required>Это отличная идея, так безопаснее и удобнее, чем искать софт по всему интернету</label>
+							<label><input type="radio" name="q45" value="не очень"> Непривычно, сложно понять, почему нельзя просто скачать любую программу с любого сайта</label>
+							<label><input type="radio" name="q45" value="непонятно"> Концепция осталась не до конца ясной, запутался(лась) в источниках приложений</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 11 -->
+		<fieldset class="form-block">
+			<legend>Блок 11. Оформление слайдов в LibreOffice Impress</legend>
+				<div class="question-group">
+					<label class="question-title">46. Каким именно способом вы добавили новый пустой слайд в свою презентацию?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q46" value="кнопка" required>Нажал(а) на панели кнопку с иконкой плюса «Добавить слайд»</label>
+							<label><input type="radio" name="q46" value="горячие клавиши"> Использовал(а) горячие клавиши (Ctrl + M)</label>
+							<label><input type="radio" name="q46" value="левая панель"> Кликнул(а) правой кнопкой мыши в левой панели со слайдами -> «Новый слайд»</label>
+							<label><input type="radio" name="q46" value="верхнее меню"> Использовал(а) верхнее меню: «Слайд» -> «Новый слайд»</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">47. Где вы настраивали макет слайда (разделение на заголовок, текст или две колонки)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q47" value="правая панель" required>В правой боковой панели «Свойства» в разделе «Макеты»</label>
+							<label><input type="radio" name="q47" value="правая кнопка"> Кликнул(а) правой кнопкой мыши по слайду -> «Макет»</label>
+							<label><input type="radio" name="q47" value="не менял"> Не менял(а) макет, удалял(а) и двигал(а) текстовые блоки вручную мышкой</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">48. Каким действием вы вставили изображение на слайд?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q48" value="верхняя панель" required>Кликнул(а) на верхней панели иконку «Вставить изображение»</label>
+							<label><input type="radio" name="q48" value="верхнее меню"> Использовал(а) верхнее меню: «Вставка» -> «Изображение...»</label>
+							<label><input type="radio" name="q48" value="перетащил"> Просто перетащил(а) картинку мышкой из папки прямо на слайд</label>
+							<label><input type="radio" name="q48" value="скопировал"> Скопировал(а) картинку из браузера и вставил(а) через Ctrl+V</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">49. Где именно в интерфейсе программы вы искали настройки анимации элементов или эффектов перехода слайдов?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q49" value="правая панель" required>Нажимал(а) на специальные иконки (звездочка/кружок) в самой правой боковой панели</label>
+							<label><input type="radio" name="q49" value="верхнее меню"> Искал(а) через верхнее меню во вкладке «Слайд-шоу» или «Формат»</label>
+							<label><input type="radio" name="q49" value="не настраивал"> Не настраивал(а) анимацию на этом уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">50. Какую кнопку на клавиатуре вы нажимали для проверки готовой презентации в полноэкранном режиме?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q50" value="F5" required>Клавишу F5 (запуск с первого слайда)</label>
+							<label><input type="radio" name="q50" value="Shift + F5"> Комбинацию Shift + F5 (запуск с текущего слайда)</label>
+							<label><input type="radio" name="q50" value="кнопка на панели"> Не трогал(а) клавиатуру, кликал(а) мышкой на кнопку «Начать с первого слайда» на панели</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">51. Как вы поступили, если вам нужно было отменить ошибочное действие (например, случайно удаленный текст или картинку)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q51" value="Ctrl + Z" required>Нажал(а) привычную комбинацию Ctrl + Z на клавиатуре</label>
+							<label><input type="radio" name="q51" value="кнопка отменить"> Искал(а) стрелочку «Отменить» на верхней панели инструментов мышкой</label>
+							<label><input type="radio" name="q51" value="переделывал заново">Не знал(а) как отменить, переделывал(а) этот кусок заново</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">52. В каком конкретно формате (расширении) вы сохранили финальный файл презентации?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q52" value="odp" required> В стандартном формате LibreOffice — .odp</label>
+							<label><input type="radio" name="q52" value="pptx"> Переключил(а) тип файла в окне сохранения на формат Microsoft PowerPoint — .pptx (или .ppt)</label>
+							<label><input type="radio" name="q52" value="не обратил внимания"> Просто нажал(а) «Сохранить», не обращая внимания на расширение файла</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 12 -->
+		<fieldset class="form-block">
+			<legend>Блок 12. Действия с файлами и программами в Astra Linux</legend>
+				<div class="question-group">
+					<label class="question-title">53. Каким действием вы создавали рабочую папку для урока в файловом менеджере?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q53" value="правая кнопка мыши" required> Правый клик мыши в пустом месте -> «Создать» -> «Папку»</label>
+							<label><input type="radio" name="q53" value="горячие клавиши"> Использовал(а) горячие клавиши (Ctrl + Shift + N)</label>
+							<label><input type="radio" name="q53" value="не создавал"> Папка уже была создана заранее, я ничего не создавал(а)</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">54. Где вы искали скачанные из интернета картинки, когда пытались добавить их в презентацию?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q54" value="загрузки" required> В специальной системной папке «Загрузки» (Downloads) внутри домашнего каталога</label>
+							<label><input type="radio" name="q54" value="стол"> На Рабочем столе</label>
+							<label><input type="radio" name="q54" value="поиск системы"> Картинки сохранились в случайное место, пришлось искать их через встроенный поиск системы</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">55. Как вы закрывали зависшую или заглючившую программу, если кнопка с «крестиком» не реагировала?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q55" value="диспетчер задач" required> Открывал(а) «Диспетчер задач» Fly через меню «Пуск» и принудительно завершал(а) процесс</label>
+							<label><input type="radio" name="q55" value="помощь учителя"> Просил(а) учителя помочь закрыть ее через терминал</label>
+							<label><input type="radio" name="q55" value="ничего не зависло"> Ничего не зависало, всё работало стабильно</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 13 -->
+		<fieldset class="form-block">
+			<legend>Блок 13. Горячие клавиши и скрытые возможности Fly</legend>
+				<div class="question-group">
+					<label class="question-title">56. Использовали ли вы встроенную фишку Astra Linux — переключение между несколькими виртуальными рабочими столами?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q56" value="да" required> Да, переключался(лась) горячими клавишами (Ctrl + Alt + Стрелки) или через значок на панели задач</label>
+							<label><input type="radio" name="q56" value="видел"> Видел(а) эту функцию, но не понял(а), зачем использовать больше одного стола</label>
+							<label><input type="radio" name="q56" value="не знал"> Не знал(а) о существовании виртуальных рабочих столов в этой системе</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">57. Какой комбинацией клавиш вы пользовались, чтобы быстро запустить Терминал (командную строку) Fly?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q57" value="специальная комбинация" required> Нажал(а) горячие клавиши Win + D</label>
+							<label><input type="radio" name="q57" value="стандартная"> Кликнул(а) мышкой на специальный значок «Свернуть все окна» в левом нижнем углу панели задач</label>
+							<label><input type="radio" name="q57" value="вручную"> Сворачивал(а) каждое открытое окно по очереди вручную мышкой</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">58. Как вы вызывали контекстное меню действий для файла без использования мыши?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q58" value="стрелочками" required> Выделил(а) файл стрелочками и нажал(а) клавишу Menu (или Shift + F10)</label>
+							<label><input type="radio" name="q58" value="никак"> Не знал(а), что так можно, все действия с файлами делаю только мышкой</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">59. Насколько удобно вам показалось использование встроенного экранного увеличителя (лупы) Fly для детального рассмотрения элементов?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q59" value="удобно" required> Очень удобно, запускал(а) его через горячие клавиши (Alt + + / -)</label>
+							<label><input type="radio" name="q59" value="не запускал"> Не запускал(а) лупу, мне было достаточно стандартного масштаба экрана</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">60. Каким образом вы выполняли переключение между открытыми окнами программ без использования мыши?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q60" value="стандартно" required> Стандартным сочетанием Alt + Tab</label>
+							<label><input type="radio" name="q60" value="трехмерное переключение"> Использовал(а) трехмерное переключение окон (эффекты Fly)</label>
+							<label><input type="radio" name="q60" value="кликами мыши"> Переключался(лась) только кликами мыши по панели задач</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 14 -->
+		<fieldset class="form-block">
+			<legend>Блок 14. Тонкости администрирования и встроенные утилиты</legend>
+				<div class="question-group">
+					<label class="question-title">61. Удалось ли вам самостоятельно найти и настроить параметры отображения Панели задач Fly (например, изменить её положение, скрыть или уменьшить значки)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q61" value="да" required> Да, вызвал(а) настройки правым кликом мыши по панели задач</label>
+							<label><input type="radio" name="q61" value="почти"> Искал(а) эту настройку в общей Панели управления системой</label>
+							<label><input type="radio" name="q61" value="нет"> Оставил(а) всё по умолчанию, побоявшись сбить интерфейс</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">62. Пробовали ли вы использовать утилиту «Корзина» Fly и заметили ли вы разницу при восстановлении файлов?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q62" value="да" required> Да, удалял(а) и восстанавливал(а) тестовые файлы, всё работает стандартно</label>
+							<label><input type="radio" name="q62" value="почти"> Возникли проблемы (файл удалился безвозвратно мимо Корзины / не нашел кнопку восстановления)</label>
+							<label><input type="radio" name="q62" value="нет"> Не пользовался(лась) Корзиной на уроке</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">63. Использовали ли вы «Центр управления» Astra Linux для настройки параметров мыши, клавиатуры или монитора?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q63" value="да" required> Да, заходил(а) туда, чтобы настроить скорость мыши или разрешение экрана под себя</label>
+							<label><input type="radio" name="q63" value="почти"> Заходил(а), но интерфейс настроек показался слишком сложным по сравнению с Windows</label>
+							<label><input type="radio" name="q63" value="нет"> Не открывал(а) Центр управления, всё работало нормально по умолчанию</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">64. Пробовали ли вы искать файлы по дате их изменения или по их физическому размеру через расширенный поиск системы?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q64" value="да" required> Да, искал(а) презентацию, выбрав фильтр «Изменено сегодня», чтобы не листать весь список</label>
+							<label><input type="radio" name="q64" value="почти"> Не использовал(а) временные фильтры, вводил(а) точное имя файла</label>
+							<label><input type="radio" name="q64" value="нет"> Не знал(а), что встроенный поиск Fly умеет искать файлы по дате и размеру</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">65. Каким действием вы открывали папку, в которой лежит найденный поиском файл (переход к расположению файла)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q65" value="правый клик" required> Правый клик по файлу в результатах поиска -> «Открыть папку с файлом» (Перейти к каталогу)</label>
+							<label><input type="radio" name="q65" value="двойной клик"> Просто открывал(а) файл двойным кликом прямо из окна поиска, не заходя в саму папку</label>
+							<label><input type="radio" name="q65" value="переписывал путь"> Переписывал(а) путь глазами и искал(а) эту папку вручную через файловый менеджер</label>
+						</div>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title">66. Насколько удобно, по вашему мнению, настроено отображение результатов поиска в системе (вывод списком, таблицей с путями к файлам)?</label>
+						<div class="options-list">
+							<label><input type="radio" name="q66" value="удобно" required> Очень удобно, сразу виден полный путь к файлу, его размер и дата создания</label>
+							<label><input type="radio" name="q66" value="не очень"> Нормально, но список кажется перегруженным текстовой информацией</label>
+							<label><input type="radio" name="q66" value="неудобно"> Неудобно, интерфейс выдачи результатов поиска показался запутанным</label>
+						</div>
+				</div>
+		</fieldset>
+		
+		<!-- БЛОК 15 -->
+		<fieldset class="form-block">
+			<legend>Блок 15. Открытые вопросы и развернутая обратная связь</legend>
+				<div class="question-group">
+					<label class="question-title" for="q67">67. Какую операцию вы так и не смогли выполнить без посторонней помощи?</label>
+						<input type="text" id="q67" name="q67" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q68">68. Назовите 2 главных плюса Astra Linux, которые вы заметили за урок:</label>
+						<input type="text" id="q68" name="q68" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q69">69. Назовите 2 главных минуса в интерфейсе или программах:</label>
+						<input type="text" id="q69" name="q69" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q70">70. Каких учебных материалов по Astra Linux вам не хватало сильнее всего на уроке?</label>
+						<input type="text" id="q70" name="q70" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q71">71. Напишите в одном предложении ваше общее впечатление от занятия c Astra Linux:</label>
+						<input type="text" id="q71" name="q71" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q72">72. Если бы вы могли изменить или перенастроить под себя одну любую вещь в интерфейсе Astra Linux прямо сейчас, что бы это было?</label>
+						<input type="text" id="q72" name="q72" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q73">73. Какое действие или этап работы на уроке отняли у вас больше всего времени и почему?</label>
+						<input type="text" id="q73" name="q73" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q74">74. Представьте, что вам нужно объяснить новичку, в чем главная фишка или отличие Astra Linux от Windows. Что бы вы ему сказали?</label>
+						<input type="text" id="q74" name="q74" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+				
+				<div class="question-group">
+					<label class="question-title" for="q75">75. Что бы вы добавили в практическое задание на следующем уроке, чтобы сделать его более интересным для вас?</label>
+						<input type="text" id="q75" name="q75" class="form-input" placeholder="Введите ваш ответ..." required>
+				</div>
+		</fieldset>
+	<button type="submit" class="button">Отправить анкету</button>
+	</form>
+	<script src="script.js"></script>
+	</body>
+	</html>

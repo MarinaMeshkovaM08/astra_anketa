@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: LightCyan;
+    color: #222;
+}
+
+/* ===== Шапка ===== */
+.survey-banner {
+    width: 100%;             
+    max-width: 100%;        
+    height: auto;            
+    display: block;          
+    margin: 0 auto 15px;   
+    border-radius: 6px;     
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 24px; 
+    background: MediumTurquoise;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Тень для текста */
+}
+
+header p {
+    margin: 0;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Тень для текста */
+}
+
+/* ===== Форма ===== */
+#forma {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-block {
+    background: #fff;
+    border: 1px solid #dde2ec;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0 0 16px;
+	margin-bottom: 30px;
+}
+
+.form-block legend {
+	font-size: 22px;
+    font-weight: bold;
+    color: LightSeaGreen;
+    padding: 0 6px;
+}
+
+.question-group {
+    margin: 16px 0;
+}
+
+.question-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ===== Варианты ответов (чекбоксы, радио) ===== */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.options-list label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+    background: #f8f9fc;
+    border: 1px solid #dde2ec;
+    border-radius: 8px;
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.options-list label:hover {
+    background: LightCyan;
+}
+
+.options-list input {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+	accent-color: LightSeaGreen;
+}
+
+/* ===== Текстовые поля ===== */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #dde2ec;
+    border-radius: 8px;
+    background: #f8f9fc;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #2f6bff;
+    background: #fff;
+}
+
+/* ===== Шкала 1–5 ===== */
+.scale-rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.scale-rating label {
+    flex: 1 1 50px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #dde2ec;
+    border-radius: 8px;
+    background: #f8f9fc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.scale-rating label:hover {
+    background: #eef3ff;
+}
+
+.scale-rating input {
+    display: none;
+}
+
+/* ===== Таблица эмоций ===== */
+.table {
+    overflow-x: auto;
+}
+
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.matrix-table th,
+.matrix-table td {
+    border: 1px solid #dde2ec;
+    padding: 8px 4px;
+    text-align: center;
+}
+
+.matrix-table th {
+    background: #eef3ff;
+    font-size: 13px;
+}
+
+.matrix-table td:first-child {
+    text-align: left;
+    background: #f8f9fc;
+    font-weight: bold;
+}
+
+.matrix-table input {
+    width: 18px;
+    height: 18px;
+}
+
+/* ===== Кнопка ===== */
+.button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    color: #fff;
+    background: LightSeaGreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: DarkCyan;
+}
+
+.button:disabled {
+    background: #9aa3b8;
+    cursor: not-allowed;
+}
+
+/* ===== Попап ===== */
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 1000;
+}
+
+#popup-overlay.show {
+    display: flex;
+}
+
+#popup-window {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#popup-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+#popup-text {
+    margin: 0 0 18px;
+    color: #555;
+}
+
+#popup-window button {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #2f6bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#popup-window button:hover {
+    background: #1e54e0;
+}
+
+.scale-rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.scale-rating label {
+    flex: 1 1 50px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #dde2ec;
+    border-radius: 8px;
+    background: #f8f9fc;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.scale-rating label:hover {
+    background: #eef3ff;
+}
+
+.scale-rating input {
+    display: none;
+}
+
+/* Жёлтая заливка — навешивается скриптом */
+.scale-rating label.active {
+    background: #ffd43b;
+    border-color: #f0b400;
+    color: #5a4000;
+}
+
+/* ===== Адаптив под телефон ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    header {
+        padding: 18px 12px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .form-block {
+        padding: 12px;
+    }
+
+    .question-title {
+        font-size: 15px;
+    }
+
+    .options-list label {
+        padding: 12px 10px;   /* крупнее — удобнее нажимать пальцем */
+    }
+
+    .scale-rating label {
+        flex: 1 1 40px;
+        padding: 12px 0;
+    }
+
+    /* Таблицу эмоций на телефоне показываем компактнее */
+    .matrix-table {
+        font-size: 12px;
+    }
+
+    .matrix-table th,
+    .matrix-table td {
+        padding: 6px 2px;
+    }
+
+    .matrix-table th {
+        font-size: 11px;
+    }
+
+    .matrix-table input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .button {
+        max-width: 100%;
+    }
+}
